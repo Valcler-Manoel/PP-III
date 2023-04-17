@@ -18,11 +18,11 @@ function App() {
             <h2>Entrar</h2>
             <form>
                 <div className="input_box">
-                    <input required type="email" placeholder="Email ou número de telefone" />
+                <input style={{fontfamily: 'FontAwesome'}} required type="email" placeholder="&#xf0e0; Email"/>
                 </div>
 
                 <div className="input_box">
-                    <input required type="password" placeholder="Senha" />
+                <input style={{fontfamily: 'FontAwesome'}} required type="password"  placeholder="&#xf084; Senha" />
                 </div>
 
                 <div>
@@ -34,22 +34,25 @@ function App() {
 
             <div className="support">
                 <div className="remember">
-                    <span><input type="checkbox" style={{margin: '0',padding: '0',height: '13px'}} /></span>
+                    <span><input type="checkbox" style={{margin: '0',padding: '4',height: '13px'}} /></span>
                     <span>Lembre-se de mim</span>
                 </div>
                 <div className="help">
-                    <a href="#">
-                        Precisa de ajuda?
-                    </a>
+                <p>Precisa de <a href="#">ajuda?</a></p>
+
                 </div>
             </div>
 
             <div className="login_footer">
                 
                 <div className="sign_up">
-                    <p>Novo por aqui? <a href="#">Assine agora.</a></p>
+                <p>Ainda não possui uma conta? <a href="#">Crie uma!</a></p>
+                    
                 </div>
-
+                <button class="submit">
+                        <i class= "fa-brands fa-google"></i>
+                        Login através do Google
+                    </button>
             </div>
         </div>
     </div>
